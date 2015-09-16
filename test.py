@@ -36,7 +36,7 @@ print 'Socket now listening'
 #Function for handling connections. This will be used to create threads
 def clientthread(conn):
     #Sending message to connected client
-    conn.send(output + '\n') #send only takes string
+    conn.send(returnuname + '\n') #send only takes string
      
     #infinite loop so that function do not terminate and thread do not end.
     while True:
